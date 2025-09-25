@@ -1,0 +1,257 @@
+{
+	"info": {
+		"_postman_id": "f325c7c2-fab7-423e-86d9-0701991cdc61",
+		"name": "Teste Pratico - JHE",
+		"description": "Documentação dos endpoint para teste pratico.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3627505"
+	},
+	"item": [
+		{
+			"name": "Lista De Clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"clientes"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Lista todos os cliente cadastrados."
+			},
+			"response": [
+				{
+					"name": "Sucesso",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/api/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"clientes"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.25"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Sep 2025 15:35:31 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"current_page\": 2,\n    \"data\": [\n        {\n            \"id\": 16,\n            \"name\": \"Christine Zboncak\",\n            \"email\": \"Davion.Leannon@yahoo.com\",\n            \"cnpj\": \"57.244.584/3391-39\",\n            \"observation\": null,\n            \"contract_value\": \"296647.00\",\n            \"created_at\": \"2025-09-25T15:23:51.000000Z\",\n            \"updated_at\": \"2025-09-25T15:23:51.000000Z\",\n            \"address\": {\n                \"id\": 16,\n                \"customer_id\": 16,\n                \"street\": \"Mraz Crescent\",\n                \"number\": 880,\n                \"cep\": \"0150702\",\n                \"complement\": \"Fugiat ut et ut et laborum amet adipisci est quaerat. Sunt dolores pariatur fugit iste ea cum enim ratione. Nam eligendi eos quaerat est qui et dolor\",\n                \"neighborhood\": \"Stephen Okuneva\",\n                \"city\": \"Pearlinestad\",\n                \"created_at\": \"2025-09-25T15:23:51.000000Z\",\n                \"updated_at\": \"2025-09-25T15:23:51.000000Z\"\n            }\n        },\n        {\n            \"id\": 17,\n            \"name\": \"Rose Schuster\",\n            \"email\": \"Ronny_Miller@hotmail.com\",\n            \"cnpj\": \"56.525.257/0895-85\",\n            \"observation\": null,\n            \"contract_value\": \"804155.00\",\n            \"created_at\": \"2025-09-25T15:23:52.000000Z\",\n            \"updated_at\": \"2025-09-25T15:23:52.000000Z\",\n            \"address\": {\n                \"id\": 17,\n                \"customer_id\": 17,\n                \"street\": \"Cruickshank Forge\",\n                \"number\": 685,\n                \"cep\": \"2963865\",\n                \"complement\": \"Qui aut nemo quia cupiditate ex. Quidem in et eum sunt voluptatem alias voluptatem temporibus. Necessitatibus accusamus ea deserunt necessitatibus mo\",\n                \"neighborhood\": \"Brandi Runolfsson\",\n                \"city\": \"North Jaronton\",\n                \"created_at\": \"2025-09-25T15:23:52.000000Z\",\n                \"updated_at\": \"2025-09-25T15:23:52.000000Z\"\n            }\n        },\n        {\n            \"id\": 18,\n            \"name\": \"Marian Kautzer\",\n            \"email\": \"Daphne_Hettinger@yahoo.com\",\n            \"cnpj\": \"09.500.394/3040-60\",\n            \"observation\": \"Et rerum occaecati asperiores doloribus ratione ea. Aut quae tenetur. Repellat ratione inventore ea deserunt est necessitatibus voluptates. Dolorum sint qui et repellendus quis fuga debitis. Corrupti sapiente nihil architecto ratione nobis quisquam nihil.\",\n            \"contract_value\": \"926639.00\",\n            \"created_at\": \"2025-09-25T15:23:53.000000Z\",\n            \"updated_at\": \"2025-09-25T15:23:53.000000Z\",\n            \"address\": {\n                \"id\": 18,\n                \"customer_id\": 18,\n                \"street\": \"Mraz Courts\",\n                \"number\": 734,\n                \"cep\": \"9016009\",\n                \"complement\": \"Consequatur est atque ab itaque quia. A vel pariatur quo. Impedit accusamus illum voluptas ipsa aspernatur ut aut. Eum enim eum illum eius et ut pari\",\n                \"neighborhood\": \"Nick Goodwin\",\n                \"city\": \"Hackettland\",\n                \"created_at\": \"2025-09-25T15:23:53.000000Z\",\n                \"updated_at\": \"2025-09-25T15:23:53.000000Z\"\n            }\n        },\n        {\n            \"id\": 19,\n            \"name\": \"Glenn Durgan\",\n            \"email\": \"Winfield_Lockman29@gmail.com\",\n            \"cnpj\": \"06.945.577/7270-33\",\n            \"observation\": null,\n            \"contract_value\": \"540545.00\",\n            \"created_at\": \"2025-09-25T15:23:53.000000Z\",\n            \"updated_at\": \"2025-09-25T15:23:53.000000Z\",\n            \"address\": {\n                \"id\": 19,\n                \"customer_id\": 19,\n                \"street\": \"Gladys Via\",\n                \"number\": 540,\n                \"cep\": \"0901975\",\n                \"complement\": null,\n                \"neighborhood\": \"Nichole Vandervort\",\n                \"city\": \"Lake Johnnyton\",\n                \"created_at\": \"2025-09-25T15:23:53.000000Z\",\n                \"updated_at\": \"2025-09-25T15:23:53.000000Z\"\n            }\n        },\n        {\n            \"id\": 20,\n            \"name\": \"Benny Halvorson\",\n            \"email\": \"Ezequiel_Dibbert@gmail.com\",\n            \"cnpj\": \"17.008.925/0405-46\",\n            \"observation\": null,\n            \"contract_value\": \"11935.00\",\n            \"created_at\": \"2025-09-25T15:23:59.000000Z\",\n            \"updated_at\": \"2025-09-25T15:23:59.000000Z\",\n            \"address\": {\n                \"id\": 20,\n                \"customer_id\": 20,\n                \"street\": \"Crawford Rapid\",\n                \"number\": 7,\n                \"cep\": \"4551964\",\n                \"complement\": null,\n                \"neighborhood\": \"Melissa Streich\",\n                \"city\": \"Lucileborough\",\n                \"created_at\": \"2025-09-25T15:23:59.000000Z\",\n                \"updated_at\": \"2025-09-25T15:23:59.000000Z\"\n            }\n        },\n        {\n            \"id\": 21,\n            \"name\": \"Ray Casper I\",\n            \"email\": \"Halle.White88@yahoo.com\",\n            \"cnpj\": \"73.653.792/3029-27\",\n            \"observation\": null,\n            \"contract_value\": \"230655.00\",\n            \"created_at\": \"2025-09-25T15:24:00.000000Z\",\n            \"updated_at\": \"2025-09-25T15:24:00.000000Z\",\n            \"address\": {\n                \"id\": 21,\n                \"customer_id\": 21,\n                \"street\": \"Daniella Burgs\",\n                \"number\": 987,\n                \"cep\": \"8029533\",\n                \"complement\": \"Hic molestiae ut sed voluptatem. Odio officia consequuntur animi. Magni minus necessitatibus nisi. Consequuntur dolores natus. Nobis quam et odit non\",\n                \"neighborhood\": \"Dawn Olson\",\n                \"city\": \"Rocklin\",\n                \"created_at\": \"2025-09-25T15:24:00.000000Z\",\n                \"updated_at\": \"2025-09-25T15:24:00.000000Z\"\n            }\n        },\n        {\n            \"id\": 22,\n            \"name\": \"Peggy Hagenes DVM\",\n            \"email\": \"Janet11@gmail.com\",\n            \"cnpj\": \"94.774.987/3440-67\",\n            \"observation\": null,\n            \"contract_value\": \"308926.00\",\n            \"created_at\": \"2025-09-25T15:24:00.000000Z\",\n            \"updated_at\": \"2025-09-25T15:24:00.000000Z\",\n            \"address\": {\n                \"id\": 22,\n                \"customer_id\": 22,\n                \"street\": \"Desmond Streets\",\n                \"number\": 917,\n                \"cep\": \"1956902\",\n                \"complement\": \"Vero autem officiis qui eum et provident consequuntur sit. Magni voluptas quia perferendis perferendis itaque qui ratione harum laboriosam. Qui volup\",\n                \"neighborhood\": \"Dean Schneider\",\n                \"city\": \"Todbury\",\n                \"created_at\": \"2025-09-25T15:24:00.000000Z\",\n                \"updated_at\": \"2025-09-25T15:24:00.000000Z\"\n            }\n        },\n        {\n            \"id\": 23,\n            \"name\": \"Nettie Dietrich\",\n            \"email\": \"Maegan_Johns14@gmail.com\",\n            \"cnpj\": \"28.712.727/0338-83\",\n            \"observation\": \"Ea laudantium impedit. Voluptas voluptatem id maxime et dolorum aperiam. Error modi eos. Sunt minus sed odit sunt. Dignissimos possimus alias ea magnam nihil minima asperiores at.\",\n            \"contract_value\": \"608449.00\",\n            \"created_at\": \"2025-09-25T15:24:01.000000Z\",\n            \"updated_at\": \"2025-09-25T15:24:01.000000Z\",\n            \"address\": {\n                \"id\": 23,\n                \"customer_id\": 23,\n                \"street\": \"Schroeder Radial\",\n                \"number\": 442,\n                \"cep\": \"1982573\",\n                \"complement\": \"Dolor qui sapiente rem ullam consequatur voluptates. Esse rerum rerum ad ipsa. Officia aut nihil dolore molestias. Saepe vero vero tenetur sed ab rep\",\n                \"neighborhood\": \"Juana O'Kon PhD\",\n                \"city\": \"Lake Brooksberg\",\n                \"created_at\": \"2025-09-25T15:24:01.000000Z\",\n                \"updated_at\": \"2025-09-25T15:24:01.000000Z\"\n            }\n        },\n        {\n            \"id\": 24,\n            \"name\": \"Larry Lynch\",\n            \"email\": \"William_Barton@hotmail.com\",\n            \"cnpj\": \"82.835.776/1422-84\",\n            \"observation\": \"Eveniet quia quos eum ipsam expedita exercitationem. Saepe distinctio quos iste ut fugit a ratione necessitatibus ut. Tempora voluptates omnis ut quia ut illum laboriosam vel sint. Illum delectus cum esse. Eos distinctio autem tempora eaque cupiditate.\",\n            \"contract_value\": \"513585.00\",\n            \"created_at\": \"2025-09-25T15:24:02.000000Z\",\n            \"updated_at\": \"2025-09-25T15:24:02.000000Z\",\n            \"address\": {\n                \"id\": 24,\n                \"customer_id\": 24,\n                \"street\": \"Bahringer Manors\",\n                \"number\": 38,\n                \"cep\": \"4843216\",\n                \"complement\": null,\n                \"neighborhood\": \"Brenda Pacocha\",\n                \"city\": \"East Urbanstad\",\n                \"created_at\": \"2025-09-25T15:24:02.000000Z\",\n                \"updated_at\": \"2025-09-25T15:24:02.000000Z\"\n            }\n        },\n        {\n            \"id\": 25,\n            \"name\": \"Mrs. Levi Ratke\",\n            \"email\": \"Joanne.Ferry@yahoo.com\",\n            \"cnpj\": \"10.495.428/7857-14\",\n            \"observation\": \"Et sequi dicta ad est. A quaerat est sequi quia minus illo nostrum. Voluptates eaque minima quia quod accusamus.\",\n            \"contract_value\": \"944783.00\",\n            \"created_at\": \"2025-09-25T15:24:03.000000Z\",\n            \"updated_at\": \"2025-09-25T15:24:03.000000Z\",\n            \"address\": {\n                \"id\": 25,\n                \"customer_id\": 25,\n                \"street\": \"Bert Rue\",\n                \"number\": 791,\n                \"cep\": \"1421351\",\n                \"complement\": \"Repellendus excepturi enim itaque et dicta. Iure nostrum sed doloribus tempora occaecati odit qui. Quam adipisci ut id. Aliquid consequuntur sit.\",\n                \"neighborhood\": \"Adrienne Schiller\",\n                \"city\": \"New Theo\",\n                \"created_at\": \"2025-09-25T15:24:03.000000Z\",\n                \"updated_at\": \"2025-09-25T15:24:03.000000Z\"\n            }\n        },\n        {\n            \"id\": 26,\n            \"name\": \"Miss Jermaine Bogan\",\n            \"email\": \"Freddy_Howell@gmail.com\",\n            \"cnpj\": \"87.068.797/2904-78\",\n            \"observation\": null,\n            \"contract_value\": \"819633.00\",\n            \"created_at\": \"2025-09-25T15:24:04.000000Z\",\n            \"updated_at\": \"2025-09-25T15:24:04.000000Z\",\n            \"address\": {\n                \"id\": 26,\n                \"customer_id\": 26,\n                \"street\": \"Jairo Brook\",\n                \"number\": 200,\n                \"cep\": \"8515699\",\n                \"complement\": null,\n                \"neighborhood\": \"Francis Steuber\",\n                \"city\": \"Hesselmouth\",\n                \"created_at\": \"2025-09-25T15:24:04.000000Z\",\n                \"updated_at\": \"2025-09-25T15:24:04.000000Z\"\n            }\n        },\n        {\n            \"id\": 27,\n            \"name\": \"Trevor Collier\",\n            \"email\": \"Amber_Marquardt@hotmail.com\",\n            \"cnpj\": \"34.964.385/4033-56\",\n            \"observation\": \"Eius occaecati et praesentium. Impedit natus soluta. Ut ut vero facere. Non tempore sapiente quia et quod rem omnis est illo. Non eos adipisci animi ex quo eius vel repellat.\",\n            \"contract_value\": \"259067.00\",\n            \"created_at\": \"2025-09-25T15:24:04.000000Z\",\n            \"updated_at\": \"2025-09-25T15:24:04.000000Z\",\n            \"address\": {\n                \"id\": 27,\n                \"customer_id\": 27,\n                \"street\": \"Abraham Squares\",\n                \"number\": 383,\n                \"cep\": \"2452014\",\n                \"complement\": null,\n                \"neighborhood\": \"Paula Wilderman\",\n                \"city\": \"Toreyton\",\n                \"created_at\": \"2025-09-25T15:24:04.000000Z\",\n                \"updated_at\": \"2025-09-25T15:24:04.000000Z\"\n            }\n        },\n        {\n            \"id\": 28,\n            \"name\": \"Dr. Arlene Wyman\",\n            \"email\": \"Ruth55@gmail.com\",\n            \"cnpj\": \"60.096.328/5809-27\",\n            \"observation\": null,\n            \"contract_value\": \"782510.00\",\n            \"created_at\": \"2025-09-25T15:24:05.000000Z\",\n            \"updated_at\": \"2025-09-25T15:24:05.000000Z\",\n            \"address\": {\n                \"id\": 28,\n                \"customer_id\": 28,\n                \"street\": \"Alejandra Junction\",\n                \"number\": 724,\n                \"cep\": \"4006676\",\n                \"complement\": \"Aut magnam ipsa ex et. Eos iste harum dicta perspiciatis animi soluta quo sit. Vel dolorem veritatis enim cumque vero. Est nisi nobis animi laudantiu\",\n                \"neighborhood\": \"Al Pacocha I\",\n                \"city\": \"Chicopee\",\n                \"created_at\": \"2025-09-25T15:24:05.000000Z\",\n                \"updated_at\": \"2025-09-25T15:24:05.000000Z\"\n            }\n        },\n        {\n            \"id\": 29,\n            \"name\": \"Connie Baumbach\",\n            \"email\": \"Cleveland_Gleason23@gmail.com\",\n            \"cnpj\": \"09.142.310/8741-95\",\n            \"observation\": \"Odio deserunt aut ipsa. Enim aut illo culpa ipsum laborum sit voluptatem. Distinctio reprehenderit non ut iure praesentium dolores. Voluptates molestiae voluptate eum et.\",\n            \"contract_value\": \"290061.00\",\n            \"created_at\": \"2025-09-25T15:24:06.000000Z\",\n            \"updated_at\": \"2025-09-25T15:24:06.000000Z\",\n            \"address\": {\n                \"id\": 29,\n                \"customer_id\": 29,\n                \"street\": \"Jacobi Lakes\",\n                \"number\": 416,\n                \"cep\": \"0016880\",\n                \"complement\": \"Voluptatem dolore id id. Vel quisquam blanditiis non error non. At sed sed quis est. Rerum vel deserunt eligendi totam quisquam sit et.\",\n                \"neighborhood\": \"Dr. Sandra Windler\",\n                \"city\": \"Miami\",\n                \"created_at\": \"2025-09-25T15:24:06.000000Z\",\n                \"updated_at\": \"2025-09-25T15:24:06.000000Z\"\n            }\n        },\n        {\n            \"id\": 35,\n            \"name\": \"Francis Waters\",\n            \"email\": \"Jaunita9@hotmail.com\",\n            \"cnpj\": \"39.297.568/0707-92\",\n            \"observation\": \"Incidunt nemo consequatur nihil possimus ipsam voluptatem sed voluptatem. Reiciendis ducimus et. Minus autem nihil maiores magnam mollitia vel omnis. Ab dolorem quaerat cupiditate tempore non ex alias. Debitis sint explicabo voluptas tempora error dicta est ut.\",\n            \"contract_value\": \"737981.00\",\n            \"created_at\": \"2025-09-25T15:31:39.000000Z\",\n            \"updated_at\": \"2025-09-25T15:31:39.000000Z\",\n            \"address\": {\n                \"id\": 30,\n                \"customer_id\": 35,\n                \"street\": \"Steuber Inlet\",\n                \"number\": 723,\n                \"cep\": \"9919559\",\n                \"complement\": null,\n                \"neighborhood\": \"Joseph Schumm IV\",\n                \"city\": \"Huelview\",\n                \"created_at\": \"2025-09-25T15:31:39.000000Z\",\n                \"updated_at\": \"2025-09-25T15:31:39.000000Z\"\n            }\n        }\n    ],\n    \"first_page_url\": \"http://localhost/api/clientes?page=1\",\n    \"from\": 16,\n    \"last_page\": 3,\n    \"last_page_url\": \"http://localhost/api/clientes?page=3\",\n    \"links\": [\n        {\n            \"url\": \"http://localhost/api/clientes?page=1\",\n            \"label\": \"&laquo; Previous\",\n            \"page\": 1,\n            \"active\": false\n        },\n        {\n            \"url\": \"http://localhost/api/clientes?page=1\",\n            \"label\": \"1\",\n            \"page\": 1,\n            \"active\": false\n        },\n        {\n            \"url\": \"http://localhost/api/clientes?page=2\",\n            \"label\": \"2\",\n            \"page\": 2,\n            \"active\": true\n        },\n        {\n            \"url\": \"http://localhost/api/clientes?page=3\",\n            \"label\": \"3\",\n            \"page\": 3,\n            \"active\": false\n        },\n        {\n            \"url\": \"http://localhost/api/clientes?page=3\",\n            \"label\": \"Next &raquo;\",\n            \"page\": 3,\n            \"active\": false\n        }\n    ],\n    \"next_page_url\": \"http://localhost/api/clientes?page=3\",\n    \"path\": \"http://localhost/api/clientes\",\n    \"per_page\": 15,\n    \"prev_page_url\": \"http://localhost/api/clientes?page=1\",\n    \"to\": 30,\n    \"total\": 31\n}"
+				}
+			]
+		},
+		{
+			"name": "Criar Cliente",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"let cnpjRandom = Math.floor(Math.random() * 1e14).toString().padStart(14, '0');\r",
+							"pm.variables.set(\"randomCNPJ\", cnpjRandom.replace(/^(\\d{2})(\\d{3})(\\d{3})(\\d{4})(\\d{2})$/, \"$1.$2.$3/$4-$5\"));\r",
+							"\r",
+							"let contractValue = (Math.random() * 9999 + 1).toFixed(2);\r",
+							"pm.variables.set(\"randomContractValue\", contractValue);\r",
+							"\r",
+							"let randomObservation = pm.variables.replaceIn('{{$randomLoremParagraph}}');\r",
+							"pm.variables.set(\"randomObservation\", Math.round(Math.random()) ? randomObservation : \"\");\r",
+							"\r",
+							"let randomComplement = pm.variables.replaceIn('{{$randomLoremParagraph}}');\r",
+							"pm.variables.set(\"randomComplement\", Math.round(Math.random()) ? randomComplement.slice(0, 149) : \"\");\r",
+							"\r",
+							"let randomCEP = Math.floor(Math.random() * 1e7).toString().padStart(7, '0');\r",
+							"pm.variables.set(\"randomCEP\", randomCEP);"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Nettie Cummings\",\r\n    \"email\": \"Hunter0@yahoo.com\",\r\n    \"cnpj\": \"91.054.108/0742-10\",\r\n    \"observation\": \"Consequatur aut voluptatum. Eos qui blanditiis amet et aut. Qui recusandae nemo repudiandae.\",\r\n    \"contract_value\": 6594.96,\r\n    \"address\": {\r\n        \"street\": \"Mann Keys\",\r\n        \"number\": 842,\r\n        \"cep\": \"0954010\",\r\n        \"complement\": \"\",\r\n        \"neighborhood\": \"Marty Wehner\",\r\n        \"city\": \"Port Sigmund\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/api/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"clientes"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Successo",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nettie Cummings\",\r\n    \"email\": \"Hunter0@yahoo.com\",\r\n    \"cnpj\": \"91.054.108/0742-10\",\r\n    \"observation\": \"Consequatur aut voluptatum. Eos qui blanditiis amet et aut. Qui recusandae nemo repudiandae.\",\r\n    \"contract_value\": 6594.96,\r\n    \"address\": {\r\n        \"street\": \"Mann Keys\",\r\n        \"number\": 842,\r\n        \"cep\": \"0954010\",\r\n        \"complement\": \"\",\r\n        \"neighborhood\": \"Marty Wehner\",\r\n        \"city\": \"Port Sigmund\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/api/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"clientes"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "{\r\n    \"success\": true,\r\n    \"customer\": {\r\n        \"name\": \"Nettie Cummings\",\r\n        \"email\": \"Hunter0@yahoo.com\",\r\n        \"cnpj\": \"91.054.108/0742-10\",\r\n        \"observation\": \"Consequatur aut voluptatum. Eos qui blanditiis amet et aut. Qui recusandae nemo repudiandae.\",\r\n        \"contract_value\": \"659496.00\",\r\n        \"updated_at\": \"2025-09-25T15:40:57.000000Z\",\r\n        \"created_at\": \"2025-09-25T15:40:57.000000Z\",\r\n        \"id\": 37,\r\n        \"address\": {\r\n            \"id\": 32,\r\n            \"customer_id\": 37,\r\n            \"street\": \"Mann Keys\",\r\n            \"number\": 842,\r\n            \"cep\": \"0954010\",\r\n            \"complement\": null,\r\n            \"neighborhood\": \"Marty Wehner\",\r\n            \"city\": \"Port Sigmund\",\r\n            \"created_at\": \"2025-09-25T15:40:57.000000Z\",\r\n            \"updated_at\": \"2025-09-25T15:40:57.000000Z\"\r\n        }\r\n    }\r\n}"
+				},
+				{
+					"name": "Dados Duplicados",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nettie Cummings\",\r\n    \"email\": \"Hunter0@yahoo.com\",\r\n    \"cnpj\": \"91.054.108/0742-10\",\r\n    \"observation\": \"Consequatur aut voluptatum. Eos qui blanditiis amet et aut. Qui recusandae nemo repudiandae.\",\r\n    \"contract_value\": 6594.96,\r\n    \"address\": {\r\n        \"street\": \"Mann Keys\",\r\n        \"number\": 842,\r\n        \"cep\": \"0954010\",\r\n        \"complement\": \"\",\r\n        \"neighborhood\": \"Marty Wehner\",\r\n        \"city\": \"Port Sigmund\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/api/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"clientes"
+							]
+						}
+					},
+					"code": 422,
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "{\r\n    \"message\": \"The email has already been taken. (and 1 more error)\",\r\n    \"errors\": {\r\n        \"email\": [\r\n            \"The email has already been taken.\"\r\n        ],\r\n        \"cnpj\": [\r\n            \"The cnpj has already been taken.\"\r\n        ]\r\n    }\r\n}"
+				}
+			]
+		}
+	]
+}
