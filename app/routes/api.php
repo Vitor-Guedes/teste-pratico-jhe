@@ -1,0 +1,10 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CustomerController;
+
+Route::controller(CustomerController::class)
+    ->group(function () {
+        Route::get('/clientes', 'index')->name('api.customers.list');
+        Route::post('/clientes', 'store')->name('api.customers.store');
+}); 
