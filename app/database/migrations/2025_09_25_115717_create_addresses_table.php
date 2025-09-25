@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('street', 150);
             $table->integer('number');
             $table->string('cep', 10);
-            $table->string('complement', 150);
+            $table->string('complement', 150)->nullable();
             $table->string('neighborhood', 100);
             $table->string('city', 100);
             $table->foreign('customer_id')
