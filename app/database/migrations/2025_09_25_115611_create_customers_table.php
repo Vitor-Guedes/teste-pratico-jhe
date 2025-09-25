@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('customers', function (Blueprint $table) {
             $table->id();
             $table->string('name', 150);
-            $table->string('email', 150);
-            $table->string('cnpj', 20);
+            $table->string('email', 150)->unique();
+            $table->string('cnpj', 20)->unique();
             $table->text('observation');
             $table->integer('contract_value');
             $table->timestamps();
